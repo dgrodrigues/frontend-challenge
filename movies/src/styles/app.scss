@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+body {
+    background-color: #0A1014;
+    margin: 0;
+    padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.significa-movies {
+    max-width: 1220px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.movies-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    max-width: calc(1220px - 40px);
+    width: calc(100% - 40px);
+    z-index: 2;
+
+    & > a {
+        z-index: 3;
+    }
+
+    &::before {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 144px;
+        width: 100%;
+        content: '';
+        z-index: 2;
+        background: rgb(10,16,20);
+        background: linear-gradient(0deg, rgba(10,16,20,0) 0%, rgba(10,16,20,0.42200630252100846) 17%, rgba(10,16,20,0.7189250700280112) 42%, rgba(10,16,20,0.9066001400560224) 68%, rgba(10,16,20,1) 95%);
+    }
+
+    img { 
+        height: 24px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .significa-movies {
+       padding: 0 10px; 
+    }
+
+    .movies-header {
+        width: calc(100vw - 20px);
+    }
+}

@@ -1,0 +1,32 @@
+.nomatch-page {
+    min-height: calc(100vh - 80px - 44px); /* 100 viewport height - header height - search input height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 144px 0 20px 0px;
+    flex-wrap: wrap;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 24px;
+        letter-spacing: 0.26pt;
+        font-weight: 500;
+        text-align: center;
+        margin: 16px 0 8px 0;
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        color: #7A8C99;
+        font-size: 16px;
+        letter-spacing: 0.17pt;
+        font-weight: 400;
+        text-align: center;
+        margin: 0;
+        line-height: 19px;
+    }
+}
